@@ -53,13 +53,13 @@ public class Lab06vst extends Applet
 			g.setColor(new Color(x,y,z));
 				}
 	// Draw 3-D Box
-		Polygon Roof = new Polygon();
-		Roof.addPoint(520,350);
-		Roof.addPoint(580,400);
-		Roof.addPoint(580,500);
-		Roof.addPoint(520,450);
+		Polygon Side = new Polygon();
+		Side.addPoint(520,350);
+		Side.addPoint(580,400);
+		Side.addPoint(580,500);
+		Side.addPoint(520,450);
 		g.setColor(new Color(0,255,0));
-		g.fillPolygon(Roof);
+		g.fillPolygon(Side);
 		Polygon Front = new Polygon();
 		Front.addPoint(580,400);
 		Front.addPoint(680,400);
@@ -69,11 +69,18 @@ public class Lab06vst extends Applet
 		g.fillPolygon(Front);
 		Polygon Back = new Polygon();
 		Back.addPoint(520,350);
-		Back.addPoint(520,540);
-		Back.addPoint(520,400);
+		Back.addPoint(630,350);
+		Back.addPoint(630,400);
 		Back.addPoint(580,400);
-		g.setColor(new Color(0,125,130));
+		g.setColor(new Color(255,255,0));
 		g.fillPolygon(Back);
+		Polygon Right = new Polygon();
+		Right.addPoint(630,350);
+		Right.addPoint(680,400);
+		Right.addPoint(630,400);
+		g.setColor(new Color(0,0,255));
+		g.fillPolygon(Right);
+
 
 
 
