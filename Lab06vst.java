@@ -30,7 +30,7 @@ public class Lab06vst extends Applet
 				g.setColor(new Color(x,y,z));
 			}
 	// Draw Random Squares
-	for (int k=1; k<=100; k++)
+		for (int k=1; k<=100; k++)
 		{
 			int diam = (int) (Math.random()*51);
 			int firstX = (int) (Math.random()*(391-diam)) + 400;
@@ -42,8 +42,7 @@ public class Lab06vst extends Applet
 			g.setColor(new Color(x,y,z));
 				}
 	// Draw Random Circles
-	for (int k=1; k<=100; k++)
-		{
+		for (int k=1; k<=100; k++){
 			int diam = (int) (Math.random()*201);
 			int firstX = (int) (Math.random()*(391-diam)) + 10;
 			int firstY = (int) (Math.random()*(291-diam)) + 300;
@@ -53,7 +52,28 @@ public class Lab06vst extends Applet
 			int z =  (int) (Math.random()*256);
 			g.setColor(new Color(x,y,z));
 				}
-// Draw 3-D Box
+	// Draw 3-D Box
+		Polygon Roof = new Polygon();
+		Roof.addPoint(520,350);
+		Roof.addPoint(580,400);
+		Roof.addPoint(580,500);
+		Roof.addPoint(520,450);
+		g.setColor(new Color(0,255,0));
+		g.fillPolygon(Roof);
+		Polygon Front = new Polygon();
+		Front.addPoint(580,400);
+		Front.addPoint(680,400);
+		Front.addPoint(680,500);
+		Front.addPoint(580,500);
+		g.setColor(new Color(255,0,0));
+		g.fillPolygon(Front);
+		Polygon Back = new Polygon();
+		Back.addPoint(520,350);
+		Back.addPoint(520,540);
+		Back.addPoint(520,400);
+		Back.addPoint(580,400);
+		g.setColor(new Color(0,125,130));
+		g.fillPolygon(Back);
 
 
 
